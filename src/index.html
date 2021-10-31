@@ -1,12 +1,879 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello World</title>
+  <title>Onlinebees</title>
 </head>
+
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <a href="#" class="header__burger">
+          <svg class="burger">
+            <use xlink:href="#burger"></use>
+          </svg>
+        </a>
+        <a href="#" class="logo">
+          <svg class="logo__icon">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <div class="search">
+          <input type="text" class="search__input" placeholder="Поиск товара">
+          <a href="#" class="search__link">
+            <svg class="search__icon">
+              <use xlink:href="#search"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="tube">
+          <a href="tel:+79876543210" class="tube__link">
+            <svg class="tube__icon">
+              <use xlink:href="#tube"></use>
+            </svg>
+            <span class="tube__phone">+7 987 654-32-10</span>
+          </a>
+          <span class="tube__address">Ежедневно с 09:00 – 20:00</span>
+        </div>
+      </div>
+      <nav class="header__navigation header-navigation">
+        <a href="#" class="header-navigation__item">
+          <div class="header-navigation__burger">
+            <svg class="burger">
+              <use xlink:href="#burger"></use>
+            </svg>
+          </div>
+          <span>Вся мебель</span>
+        </a>
+        <a href="#" class="header-navigation__item"><span>Выставочные залы</span></a>
+        <a href="#" class="header-navigation__item"><span>О нас</span></a>
+        <a href="#" class="header-navigation__item"><span>Новости</span></a>
+        <a href="#" class="header-navigation__item"><span>Отзывы</span></a>
+        <a href="#" class="header-navigation__item"><span>Контакты</span></a>
+        <div class="header-navigation__dropdown dropdown">
+          <a href="#" class="dropdown__item dropdown-head-item">
+            <div class="dropdown__icon">
+              <svg class="soft-furniture dropdown-icon">
+                <use xlink:href="#soft-furniture"></use>
+              </svg>
+            </div>
+            <div class="dropdown__text">Мягкая мебель</div>
+          </a>
+          <a href="#" class="dropdown__item">
+            <div class="dropdown__icon">
+              <svg class="hallway dropdown-icon">
+                <use xlink:href="#hallway"></use>
+              </svg>
+            </div>
+            <div class="dropdown__text">Для прихожей</div>
+          </a>
+          <a href="#" class="dropdown__item">
+            <div class="dropdown__icon">
+              <svg class="kitchen-furniture dropdown-icon">
+                <use xlink:href="#kitchen-furniture"></use>
+              </svg>
+            </div>
+            <div class="dropdown__text">Кухонная мебель</div>
+          </a>
+          <a href="#" class="dropdown__item">
+            <div class="dropdown__icon">
+              <svg class="living-room dropdown-icon">
+                <use xlink:href="#living-room"></use>
+              </svg>
+            </div>
+            <div class="dropdown__text">Для гостинных</div>
+          </a>
+          <a href="#" class="dropdown__item">
+            <div class="dropdown__icon">
+              <svg class="table dropdown-icon">
+                <use xlink:href="#table"></use>
+              </svg>
+            </div>
+            <div class="dropdown__text">Столы</div>
+          </a>
+          <a href="#" class="dropdown__item">
+            <div class="dropdown__icon">
+              <svg class="cupboard dropdown-icon">
+                <use xlink:href="#cupboard"></use>
+              </svg>
+            </div>
+            <div class="dropdown__text">Шкафы</div>
+          </a>
+        </div>
+      </nav>
+      
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="breadcrumbs__item active">Мягкая Мебель</li>
+        </ul>
+      </nav>
+      <h3 class="main__title title">Мягкая Мебель</h3>
+      <div class="main__body">
+        <aside class="filter">
+          <header class="filter__header filter-header">
+            <div class="filter-header__body">
+              <a href="#" class="filter-header__arrow-block arrow-block">
+                <svg class="arrow-block__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </a>
+              <div class="filter-header__title">
+                <h4>Мягкая мебель</h4>
+              </div>
+              <a href="#" class="filter__close">
+                <svg class="close-icon">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </a>
+            </div>
+          </header>
+          <article class="filter__main">
+            <section class="filter__categories filter-categories">
+              <div class="filter-categories__title filter-title">
+                <h4>Категория</h4>
+                <a href="#" class="filter-categories__arrow-block arrow-block">
+                  <svg class="arrow-block__icon arrow-block__icon_up">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="filter-categories__head">
+                <button class="filter-categories__btn active-filter-btn" type="button">
+                  <span>Мягкая мебель</span>
+                </button>
+              </div>
+              <ul class="filter-categories__list">
+                <li class="filter-categories__item"><a href="#">Кресла-мешки</a></li>
+                <li class="filter-categories__item"><a href="#">Компьютерные кресла</a></li>
+                <li class="filter-categories__item"><a href="#">Кресла</a></li>
+                <li class="filter-categories__item"><a href="#">Пуфики и банкетки</a></li>
+                <li class="filter-categories__item"><a href="#">Кровати и матрасы</a></li>
+                <li class="filter-categories__item"><a href="#">Диваны</a></li>
+                <li class="filter-categories__item"><a href="#">Комплекты мягкой мебели</a></li>
+              </ul>
+            </section>
+            <section class="filter__price filter-price">
+              <div class="filter-price__title filter-title">
+                <h4>Цена</h4>
+                <a href="#" class="filter-price__arrow-block arrow-block">
+                  <svg class="arrow-block__icon arrow-block__icon_up">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="filter-price__range">
+                <div class="range">
+                  <div class="range__from">
+
+                  </div>
+                  <div class="range__to">
+
+                  </div>
+                </div>
+              </div>
+              <div class="filter-price__range-input range-input">
+                <div class="range-input__block">
+                  <p>от</p>
+                  <input type="number" placeholder="343 342">
+                </div>
+                <div class="range-input__block">
+                  <p>до</p>
+                  <input type="number" placeholder="343 342">
+                </div>
+              </div>
+            </section>
+            <section class="filter__sale filter-sale">
+              <div class="filter-sale__title filter-title">
+                <h4>Товары со скидкой</h4>
+                <a href="#" class="filter-sale__arrow-block arrow-block">
+                  <svg class="arrow-block__icon arrow-block__icon_up">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <label class="filter-sale__switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </section>
+            <section class="filter__materials filter-materials">
+              <div class="filter-materials__title filter-title">
+                <h4>Материалы</h4>
+                <a href="#" class="filter-materials__arrow-block arrow-block">
+                  <svg class="arrow-block__icon arrow-block__icon_up">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="filter-materials__list">
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="abs" id="abs" class="filter-materials__check">
+                  <label for="abs">ABS пластик</label>
+                </div>
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="amicor" id="amicor" class="filter-materials__check">
+                  <label for="amicor">Amicor TM</label>
+                </div>
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="eco" id="eco" class="filter-materials__check" checked>
+                  <label for="eco">Eco Foam</label>
+                </div>
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="pla" id="pla" class="filter-materials__check">
+                  <label for="pla">PLA пластик</label>
+                </div>
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="akril" id="akril" class="filter-materials__check">
+                  <label for="akril">Акрил</label>
+                </div>
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="auminium-alloy" id="auminium-alloy" class="filter-materials__check">
+                  <label for="auminium-alloy">Алюминиевый сплав</label>
+                </div>
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="aluminum" id="aluminum" class="filter-materials__check">
+                  <label for="aluminum">Алюминий</label>
+                </div>
+                <div class="filter-materials__row">
+                  <input type="checkbox" name="bamboo" id="bamboo" class="filter-materials__check">
+                  <label for="bamboo">Бамбук</label>
+                </div>
+
+              </div>
+              <a href="#" class="filter-materials__show-btn">
+                Очистить все
+              </a>
+            </section>
+            <section class="filter__height filter-height">
+              <div class="filter-height__title filter-title">
+                <h4>Высота, см</h4>
+                <a href="#" class="filter-height__arrow-block arrow-block">
+                  <svg class="arrow-block__icon arrow-block__icon_down">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="filter-height__range">
+                <div class="range">
+                  <div class="range__from">
+
+                  </div>
+                  <div class="range__to">
+
+                  </div>
+                </div>
+              </div>
+              <div class="filter-height__range-input range-input">
+                <div class="range-input__block">
+                  <p>от</p>
+                  <input type="number" placeholder="1">
+                </div>
+                <div class="range-input__block">
+                  <p>до</p>
+                  <input type="number" placeholder="240">
+                </div>
+              </div>
+            </section>
+            <section class="filter__lenght filter-lenght">
+              <div class="filter-lenght__title filter-title">
+                <h4>Длина, см</h4>
+                <a href="#" class="filter-lenght__arrow-block arrow-block">
+                  <svg class="arrow-block__icon arrow-block__icon_down">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="filter-lenght__range">
+                <div class="range">
+                  <div class="range__from">
+
+                  </div>
+                  <div class="range__to">
+
+                  </div>
+                </div>
+              </div>
+              <div class="filter-lenght__range-input range-input">
+                <div class="range-input__block">
+                  <p>от</p>
+                  <input type="number" placeholder="400">
+                </div>
+                <div class="range-input__block">
+                  <p>до</p>
+                  <input type="number" placeholder="2000">
+                </div>
+              </div>
+            </section>
+          </article>
+        </aside>
+        <div class="main__content">
+          <section class="active-filter">
+            <div class="active-filter__btns">
+              <button class="active-filter__btn active-filter-btn" type="button">
+                <span>Материалы: Eco Foam</span>
+                <svg class="close-icon">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+              <button class="active-filter__btn active-filter-btn" type="button">
+                <span>Цвет: Бирюзовый</span>
+                <svg class="close-icon">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+              <button class="active-filter__btn active-filter-btn" type="button">
+                <span>Длина, см: от 400 до 2000</span>
+                <svg class="close-icon">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+              <a href="#" class="active-filter__clear-btn">
+                Очистить все
+              </a>
+            </div>
+          </section>
+          <button type="button" type="button" class="filter-btn">
+            <svg class="filter-btn__icon">
+              <use xlink:href="#filter"></use>
+            </svg>
+            <span class="filter-btn__text">
+              Фильтр
+            </span>
+          </button>
+          <section class="products">
+            <div class="products__list">
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/1-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/1-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/1-big.png" alt="Диван-кровать Вилли Рогожка, розовый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Диван-кровать Вилли Рогожка, розовый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>4234 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/2-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/2-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/2-big.png"
+                      alt="Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>12 244 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/3-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/3-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/3-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>7000 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/2-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/2-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/2-big.png"
+                      alt="Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>12 244 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/4-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/4-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/4-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>4234 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/3-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/3-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/3-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>7000 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/4-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/4-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/4-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>4234 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/3-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/3-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/3-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>7000 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/2-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/2-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/2-big.png"
+                      alt="Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>12 244 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/3-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/3-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/3-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>7000 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/2-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/2-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/2-big.png"
+                      alt="Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>12 244 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/4-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/4-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/4-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>4234 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/3-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/3-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/3-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>7000 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/4-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/4-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/4-big.png"
+                      alt="Шкаф Guocai CBME12035 Бежевый, бежевый, белый">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Шкаф Guocai CBME12035 Бежевый, бежевый, белый</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>4234 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="products__item product">
+                <div class="product__image">
+                  <picture>
+                    <source srcset="/img/2-small.png" type="image/png" media="(max-width:768px)">
+                    <source srcset="/img/2-big.png" type="image/png">
+                    <img src="./common.blocks/product-block/2-big.png"
+                      alt="Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж">
+                  </picture>
+                </div>
+                <div class="product__description">
+                  <p>Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</p>
+                </div>
+                <div class="product__price price">
+                  <div class="price__item">
+                    <span>12 244 ₽</span>
+                  </div>
+                  <div class="price__item price__item_line-through">
+                    <span>21 000 ₽</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="pagination">
+              <div class="pagination__list">
+                <a href="#" class="pagination__item active"><span>1</span></a>
+                <a href="#" class="pagination__item"><span>2</span></a>
+                <a href="#" class="pagination__next-item">
+                  <svg class="pagination__arrow-icon">
+                    <use xlink:href="#pagination-item-next"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="main__description description">
+        <div class="description__title">
+          <h3>Мягкая мебель</h3>
+        </div>
+        <div class="description__text">
+          <p>Наша компания организует оптовые поставки любой сложности. Мы изготовим и доставим заказ согласно
+            вашему
+            требованию и предподчениям.</p>
+          <p>Мы несём полную ответственнсть за качество и сроки поставки. Опираясь на наш опыт ,мы можем
+            организовать
+            сделку любой сложности. Мы стремимся удовлетворить спрос самого взыскательного покупателя, поэтому
+            модельный ряд нашей продукции ежегодно пополняется новыми моделями.</p>
+          <p>Благодаря передовым технологиям и оригинальным дизайнерским решениям мы стали признанным лидером  в
+            производстве корпусной мебели для дома и офиса.</p>
+          <p>Наша компания регулярно участвует в мебельных выставках.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__body">
+        <div class="footer__col">
+          <nav class="footer__nav nav">
+            <div class="nav__header">
+              <a href="#">Магазин</a>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#">Выставочные залы</a></li>
+              <li class="nav__item"><a href="#">О нас</a></li>
+              <li class="nav__item"><a href="#">Новости</a></li>
+              <li class="nav__item"><a href="#">Отзывы</a></li>
+              <li class="nav__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__contacts contacts">
+            <div class="contacts__tel">
+              <a href="tel:+79876543210">+7 987 654-32-10</a>
+            </div>
+            <div class="contacts__time">
+              <span>Ежедневно с 09:00 – 20:00</span>
+            </div>
+            <div class="contacts__mail">
+              <a href="mailto:example@example.ru">example@example.ru</a>
+            </div>
+            <div class="contacts__social">
+              <a href="#">
+                <svg class="inst">
+                  <use xlink:href="#inst"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="footer__logo-icon">
+              <svg class="footer__icon">
+                <use xlink:href="#menu-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__address">
+            <p>Россия, г. Рузаевка,</p>
+            <p>ул. Карла Маркса, 16-г,</p>
+          </div>
+          <div class="footer__policy">
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__catalog footer-catalog">
+            <div class="footer-catalog__header">
+              Каталог
+            </div>
+            <div class="footer-catalog__list">
+              <div class="footer-catalog__col">
+                <a class="footer-catalog__item" href="#">Мягкая мебель</a>
+                <a class="footer-catalog__item" href="#">Кухонная мебель</a>
+                <a class="footer-catalog__item" href="#">Для гостинных</a>
+              </div>
+              <div class="footer-catalog__col">
+                <a class="footer-catalog__item" href="#">Для прихожей</a>
+                <a class="footer-catalog__item" href="#">Столы</a>
+                <a class="footer-catalog__item" href="#">Шкафы</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__description">
+        <p>Точно Мебель — магазин мебели, 2020</p>
+        <p>Сделано в <a href="https://onlinebees.ru/">OnlineBees</a></p>
+      </div>
+    </div>
+  </footer>
+  <section class="menu ">
+    <div class="container">
+      <header class="menu__header menu-header">
+        <div class="menu-header__body">
+          <a href="#" class="logo">
+            <svg class="logo__icon">
+              <use xlink:href="#menu-logo"></use>
+            </svg>
+          </a>
+          <a href="#" class="menu__close">
+            <svg class="close-icon">
+              <use xlink:href="#close"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <article class="menu__main">
+        <div class="menu__categories categories">
+          <div class="categories__current">
+            <a href="#">Вся мебель</a>
+          </div>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <svg class="soft-furniture-icon categories__icon">
+                <use xlink:href="#soft-furniture"></use>
+              </svg>
+              <a href="#">Мягкая мебель</a>
+            </li>
+            <li class="categories__item">
+              <svg class="hallway-icon categories__icon">
+                <use xlink:href="#hallway"></use>
+              </svg>
+              <a href="#">Для прихожей</a>
+            </li>
+            <li class="categories__item">
+              <svg class="categories__icon kitchen-furniture-icon">
+                <use xlink:href="#kitchen-furniture"></use>
+              </svg>
+              <a href="#">Кухонная мебель</a>
+            </li>
+            <li class="categories__item">
+              <svg class="categories__icon living-room-icon">
+                <use xlink:href="#living-room"></use>
+              </svg>
+              <a href="#">Для гостинных</a>
+            </li>
+            <li class="categories__item">
+              <svg class="categories__icon table-icon">
+                <use xlink:href="#table"></use>
+              </svg>
+              <a href="#">Столы</a>
+            </li>
+            <li class="categories__item">
+              <svg class="categories__icon cupboard-icon">
+                <use xlink:href="#cupboard"></use>
+              </svg>
+              <a href="#">Шкафы</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="menu__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Выставочные залы</a></li>
+            <li class="nav__item"><a href="#">О нас</a></li>
+            <li class="nav__item"><a href="#">Новости</a></li>
+            <li class="nav__item"><a href="#">Отзывы</a></li>
+            <li class="nav__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </article>
+      <footer class="menu__footer">
+        <div class="contacts">
+          <div class="contacts__tel">
+            <a href="tel:+79876543210">+7 987 654-32-10</a>
+          </div>
+          <div class="contacts__time">
+            <span>Ежедневно с 09:00 – 20:00</span>
+          </div>
+          <div class="contacts__mail">
+            <a href="mailto:example@example.ru">example@example.ru</a>
+          </div>
+          <div class="contacts__social">
+            <a href="#">
+              <svg class="inst">
+                <use xlink:href="#inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <div class="overlay">
+  </div>
 
 </body>
+
 </html>

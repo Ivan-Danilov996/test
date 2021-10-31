@@ -1,0 +1,34 @@
+// main: ../../less/styles.less
+@import (reference) '../../less/variables.less';
+
+.pagination {
+    margin-top: 20px;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        width: 24px;
+        height: 32px;
+        color: @color-svg-black;
+    }
+    &____next-item, &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__arrow-icon {
+        width: 16px;
+        height: 7px;
+        fill: @active-link;
+        margin-left: 12px;
+    }
+    &__item.active {
+        border-radius: 4px;
+        background-color: @active-filter-btn;
+        color: @color-filter-btns;
+    }
+    @media(min-width: 1440px) {
+        display: none;
+    }
+}

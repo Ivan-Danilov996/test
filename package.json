@@ -1,5 +1,5 @@
 {
-  "name": "site ...",
+  "name": "onlinebees",
   "version": "1.0.0",
   "description": "Верстка сайта ...",
   "repository": {
@@ -69,7 +69,7 @@
     "url-loader": "^0.6.2",
     "vue-loader": "^13.7.1",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^3.11.0",
+    "webpack": "^3.12.0",
     "webpack-build-notifier": "^0.1.25",
     "webpack-dev-server": "^2.11.2",
     "webpack-error-notification": "^0.1.7"

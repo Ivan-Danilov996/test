@@ -1,0 +1,20 @@
+// main: ../../less/styles.less
+@import (reference) '../../less/variables.less';
+
+.filter-btn {
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    &__icon {
+        width: 16px;
+        height: 16px;
+        fill: @active-filter-btn;
+    }
+    &__text {
+      font-weight: 600;
+      margin-left: 12px;
+    }
+    @media(min-width: 1440px) {
+      display: none;
+    }
+}

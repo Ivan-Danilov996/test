@@ -1,0 +1,75 @@
+// main: ../../less/styles.less
+@import (reference) '../../less/variables.less';
+
+.menu {
+    position: fixed;
+    padding: 5px 0 40px;
+    background-color: @color-svg-black;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: -150%;
+    left: 0;
+    right: 0;
+    transition: all .3s ease 0s;
+
+    &.active {
+        display: block;
+        top: 0;
+        overflow: auto;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    &__main, &__nav {
+        margin-top: 24px;
+        color: @color-filter-btns;
+    }
+}
+
+.menu-header {
+    
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.categories {
+    &__current {
+        font-weight: 600;
+    }
+    &__item {
+        margin-top: 24px;
+        position: relative;
+        padding-left: 40px;
+    }
+    &__icon {
+        position: absolute;
+        width: 28px;
+        height: 22px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: @color-filter-btns;
+    }
+
+    .hallway-icon {
+        height: 21px;
+    }
+
+    .kitchen-furniture-icon {
+        height: 24px;
+    }
+
+    .living-room-icon {
+        height: 23px;
+    }
+
+    .cupboard-icon {
+        height: 28px;
+    }
+}

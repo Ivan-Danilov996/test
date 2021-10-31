@@ -1,0 +1,52 @@
+// main: ../../less/styles.less
+@import (reference) '../../less/variables.less';
+
+.active-filter {
+    margin-top: 24px;
+    &__btns {
+        display: flex;
+        flex-wrap: wrap;
+        @media(min-width: 1440px) {
+            align-items: center;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px 8px 12px;
+    }
+    &__btn + &__btn {
+        margin-top: 8px;
+        @media(min-width: 1440px) {
+            margin-top: 0;
+        }
+        @media(min-width: 1440px) {
+            margin-left: 8px;
+        }
+    }
+    &__clear-btn {
+        display: inline-block;
+        margin-top: 12px;
+        color: @active-link;
+        position: relative;
+        &:after {
+            content:'';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            border-top: 1px dashed @active-link;
+        }
+        @media(min-width: 1440px) {
+            margin-top: 0;
+            margin-left: 8px;
+        }
+    }
+}
+
+.close-icon {
+    margin-left: 12px;
+    width: 15px;
+    height: 15px;
+    fill: @color-filter-btns;
+}

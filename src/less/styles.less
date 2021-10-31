@@ -1,4 +1,18 @@
 @import (reference) './variables.less';
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   color: @color-text;
@@ -20,9 +34,97 @@ button {
   margin: 0;
   padding: 0;
 }
+ul {
+  list-style-type: none;
+}
+
+
 
 a {
   text-decoration: none;
-
   color: inherit;
 }
+
+input {
+  border: none;
+}
+
+input {
+  &::-webkit-input-placeholder {color:  @color-svg-black;}
+  &::-moz-placeholder          {color:  @color-svg-black;}
+  &:-moz-placeholder           {color:  @color-svg-black;}
+  &:-ms-input-placeholder      {color:  @color-svg-black;}
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: @color-svg-black;
+  position: relative;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 282px;
+  margin: 0 auto;
+  @media(min-width: 1440px) {
+    width: 1200px;
+  }
+}
+
+h3 {
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  @media(min-width: 1440px) {
+    font-size: 48px;
+    margin-top: 16px;
+}
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 50px;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  @media(min-width: 1440px) {
+    margin-top: 0;
+    padding-top: 44px;
+  }
+  &__body {
+    @media(min-width: 1440px) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 46px;
+    }
+  }
+  &__content {
+    @media(min-width: 1440px) {
+      margin-left: 73px;
+    }
+  }
+}
+
+
+
+
+
+

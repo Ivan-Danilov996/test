@@ -1,0 +1,59 @@
+// main: ../../less/styles.less
+@import (reference) '../../less/variables.less';
+
+.product {
+    margin-top: 16px;
+    max-width: 50%;
+    transition: all .3s ease 0s;
+    @media(min-width: 1440px) {
+        margin-top: 0;
+        width: 264px;
+        padding-bottom: 16px;
+    }
+    &:nth-child(n+4) {
+        margin-top: 32px;   
+    }
+    &__description {
+        max-width: 90%;
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 18px;
+        @media(min-width: 1440px) {
+            font-size: 14px;
+        }
+        p {
+            white-space: normal;
+        }
+    }
+    &:hover {
+        box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.12), 0px 32px 40px rgba(50, 50, 71, 0.12);
+    }
+
+    &__description, &__price {
+        @media(min-width: 1440px) {
+            margin-left: 16px;
+        }
+    }
+}
+
+.price {
+    margin-top: 4px;
+    @media(min-width: 1440px) {
+        font-size: 18px;
+    }
+    &__item {
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__item_line-through {
+        font-size: 10px;
+        margin-left: 12px;
+        color: @active-link;
+        text-decoration: line-through;
+        font-weight: 400;
+        @media(min-width: 1440px) {
+            font-size: 14px;
+        }
+    }
+}
