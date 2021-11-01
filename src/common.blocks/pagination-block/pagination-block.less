@@ -11,6 +11,11 @@
         width: 24px;
         height: 32px;
         color: @color-svg-black;
+        span {
+            &:hover{
+                color: @active-filter-btn;
+            }
+        }
     }
     &____next-item, &__item {
         display: flex;
@@ -22,6 +27,12 @@
         height: 7px;
         fill: @active-link;
         margin-left: 12px;
+        &:hover{
+            fill: @active-filter-btn;
+        }
+        &:active {
+            fill: @btn-active;
+        }
     }
     &__item.active {
         border-radius: 4px;

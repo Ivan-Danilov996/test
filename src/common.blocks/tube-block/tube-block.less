@@ -1,0 +1,42 @@
+// main: ../../less/styles.less
+@import (reference) '../../less/variables.less';
+
+.tube {
+    @media(min-width: 1440px) {
+        text-align: right;
+    }
+    &__address {
+        @media(min-width: 1440px) {
+            display: block;
+        }
+        line-height: 20px;
+        display: none;
+    }
+    &__phone {
+        display: none;
+        font-weight: 600;
+        font-size: 18px;  
+        line-height: 26px;
+        @media(min-width: 1440px) {
+            display: block;
+        }
+    }
+    &__link {
+        display: block;
+        width: 18px;
+        height: 18px;
+        @media(min-width: 1440px) {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__icon {
+        width: 100%;
+        height: inherit;
+        fill: @color-svg-black;
+        @media(min-width: 1440px) {
+            display: none;
+        }
+    }
+}

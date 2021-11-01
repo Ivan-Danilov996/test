@@ -51,6 +51,9 @@
     }
 
     &__policy {
+        &:hover, &:active {
+            color: @active-filter-btn;
+        }
         margin-top: 8px;
         color: @active-link;
         a {
@@ -88,40 +91,6 @@
         display: flex;
         flex-direction: column;
     }
-}
-
-.nav {
-    &__header {
-        font-weight: 600;
-        font-size: 18px;   
-        color: @color-filter-btns; 
-    }
-    &__item {
-        display: block;
-        font-weight: 600;
-        font-size: 14px;
-    }
-
-    &__item + &__item {
-        margin-top: 16px;
-        @media(min-width: 1440px) {
-            margin-top: 8px;
-        }
-    }
-
-    &__header {
-        display: none;
-        @media(min-width: 1440px) {
-            display: block;
-        }
-    }
-
-    &__list {
-        @media(min-width: 1440px) {
-            margin-top: 16px;
-        }
-    }
-
 }
 
 .footer-catalog {
